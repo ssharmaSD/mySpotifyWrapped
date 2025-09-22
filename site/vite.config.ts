@@ -23,4 +23,8 @@ export default defineConfig({
     outDir: '../docs',
     emptyOutDir: false,
   },
+  // Handle client-side routing for GitHub Pages
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+  }
 })
