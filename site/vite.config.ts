@@ -13,12 +13,12 @@ export default defineConfig({
         // Copy data files to docs/data after build
         const dataDir = join(__dirname, '../docs/data')
         mkdirSync(dataDir, { recursive: true })
-        copyFileSync('../data/all_music.csv', join(dataDir, 'all_music.csv'))
-        copyFileSync('../data/clustered_sessions.csv', join(dataDir, 'clustered_sessions.csv'))
+        copyFileSync(join(__dirname, '../data/all_music.csv'), join(dataDir, 'all_music.csv'))
+        copyFileSync(join(__dirname, '../data/clustered_sessions.csv'), join(dataDir, 'clustered_sessions.csv'))
       }
     }
   ],
-  base: '/mySpotifyWrapped/',
+  base: './',
   build: {
     outDir: '../docs',
     emptyOutDir: false,
