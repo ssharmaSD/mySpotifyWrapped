@@ -32,7 +32,7 @@ function useCsv(url: string) {
 }
 
 export default function App() {
-  const { rows, loading, error } = useCsv('./data/all_music.csv');
+  const { rows, loading, error } = useCsv('/mySpotifyWrapped/data/all_music.csv');
 
   const byYear = useMemo(() => {
     const map = new Map<number, number>();

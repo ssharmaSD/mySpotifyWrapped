@@ -18,7 +18,7 @@ export default defineConfig({
       }
     }
   ],
-  base: './',
+  base: '/mySpotifyWrapped/',
   build: {
     outDir: '../docs',
     emptyOutDir: false,
