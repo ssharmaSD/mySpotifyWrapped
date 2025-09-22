@@ -2,18 +2,22 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from pathlib import Path
- 
+
 st.set_page_config(page_title="Temporal Clusters", layout="wide")
+
+# Use shared data loading from main app
 DATA_DIR = Path('data')
- 
+
 @st.cache_data
-def load_df(name: str):
-    f = DATA_DIR / f"{name}.parquet"
-    if f.exists():
-        return pd.read_parquet(f)
-    f = DATA_DIR / f"{name}.csv"
-    return pd.read_csv(f) if f.exists() else None
- 
+def load_df(name: str) -> pd.DataFrame | None:
+    f_parquet = DATA_DIR / f"{name}.parquet"
+    f_csv = DATA_DIR / f"{name}.csv"
+    if f_parquet.exists():
+        return pd.read_parquet(f_parquet)
+    if f_csv.exists():
+        return pd.read_csv(f_csv)
+    return None
+
 clustered_sessions = load_df('clustered_sessions')
 st.title("Temporal Clusters")
  
