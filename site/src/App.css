@@ -65,30 +65,30 @@ h4 {
 p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #555;
+  color: #333;
+  line-height: 1.7;
 }
 
 /* Cards and Sections */
 .section {
-  background: white;
+  background: transparent;
   border-radius: 12px;
   padding: 32px;
   margin-bottom: 32px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e9ecef;
 }
 
 .chart-container {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   padding: 24px;
   margin: 24px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(162, 59, 114, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .insights-box {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: rgba(162, 59, 114, 0.05);
   border-left: 4px solid #A23B72;
   padding: 24px;
   border-radius: 8px;
@@ -103,12 +103,13 @@ p {
 }
 
 .stat-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e9ecef;
+  border: 1px solid rgba(162, 59, 114, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .stat-number {
@@ -170,13 +171,14 @@ p {
 
 /* Navigation */
 .navigation {
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   padding: 16px 24px;
-  border-bottom: 2px solid #e9ecef;
+  border-bottom: 2px solid rgba(162, 59, 114, 0.2);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
+  backdrop-filter: blur(10px);
 }
 
 .nav-container {
