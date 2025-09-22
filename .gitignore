@@ -1,0 +1,17 @@
+# Environments and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Local environment folders (conda/venv in project)
+mySpotify/
+
+# Large/binary artifacts
+*.parquet
+*.pyc
+
+# Personal raw export (uppercase Data) - exclude from repo
+Data/
+
+# Streamlit secrets (if used locally)
+.streamlit/secrets.toml
