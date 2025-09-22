@@ -10,7 +10,7 @@ st.set_page_config(page_title="Suhani's Spotify Wrapped", layout="wide")
 # Replace default sidebar page labels with explicit navigation
 try:
     pages = [
-        st.Page("app.py", title="Suhani's Spotify Wrapped", icon="🏠"),
+        st.Page("app.py", title="Introduction", icon="🏠"),
         st.Page("pages/1_🧭_Overview.py", title="Overview", icon="🧭"),
         st.Page("pages/2_🎧_BTS_Deep_Dive.py", title="BTS Deep Dive", icon="🎧"),
         st.Page("pages/3_📈_Extended_History.py", title="Extended History", icon="📈"),
